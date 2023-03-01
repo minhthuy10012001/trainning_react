@@ -18,7 +18,10 @@ import Content from 'Preview/pages';
 import ChatApp from 'ChatApp/pages';
 import Memo from 'useMemo/pages';
 import Reduce from 'Reduce/pages';
-import TodoReducer from 'TodoReducer/pages';
+import TodoReducer from 'TodoReducer';
+// import Context from 'Context';
+import Context from './store/Context';
+
 // import ListPage from './features/Todo/pages/ListPage';
 // import NotFound from './components/NotFound';
 
@@ -60,6 +63,8 @@ function App() {
       <Memo/>
       <Reduce/> */}
       <TodoReducer/>
+      {/* <Context/> */}
+      <Context />
     </div>
   );
 }
