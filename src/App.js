@@ -21,6 +21,7 @@ import Reduce from 'Reduce/pages';
 import TodoReducer from 'TodoReducer';
 // import Context from 'Context';
 import Context from './store/Context';
+import TodoList from 'TodoList/components/TodoList';
 
 // import ListPage from './features/Todo/pages/ListPage';
 // import NotFound from './components/NotFound';
@@ -39,19 +40,19 @@ function App() {
 
   return (
     <div className="App">
-      <h3>Home Page</h3>
-      <Header/>
+      {/* <h3>Home Page</h3> */}
+      {/* <Header/>
       <p><Link to='/todos'>Todo List</Link></p>
       <p><Link to='/albums'>Album</Link></p>
-      <p><Link to = '/ProductList'>Product List</Link></p>
+      <p><Link to = '/ProductList'>Product List</Link></p> */}
       {/* <ProductList/> */}
       <Routes>
         {/* <Route path='/' element={<Product/>}></Route> */}
-        <Route path="/" element={<CounterFeature />} />
+        {/* <Route path="/" element={<CounterFeature />} />
         <Route path="/todos" element={<TodoFeature />} />
         <Route path="/albums" element={<AlbumFeature />} />
         <Route path = '/ProductList' element = {<ProductList/>}></Route>
-        <Route path='/products/:id' element= {<ProductDetail/>}/>
+        <Route path='/products/:id' element= {<ProductDetail/>}/> */}
         {/* <Route path="" element={<NotFound />} /> */}
         
       </Routes>
@@ -62,9 +63,10 @@ function App() {
       <ChatApp/>
       <Memo/>
       <Reduce/> */}
-      <TodoReducer/>
+      {/* <TodoReducer/> */}
       {/* <Context/> */}
-      <Context />
+      {/* <Context /> */}
+      <TodoList/>
     </div>
   );
 }
